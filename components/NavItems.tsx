@@ -4,7 +4,7 @@ import { logoutUser } from "~/appwrite/auth";
 import { sidebarItems } from "~/constants";
 import { cn } from "~/lib/utils";
 
-const NavItems = ({ handleClick }: { handleClick: () => void }) => {
+const NavItems = ({ handleClick }: { handleClick?: () => void }) => {
   const users = useLoaderData();
   const navigate = useNavigate();
 
